@@ -1,12 +1,3 @@
-use attrition;
-select * from train limit 10;
-select * from predicted_att limit 10;
-
-select p.Emp_ID, p.Dateofjoining, t.LastWorkingDate, p.Predicted_quaters
-from predicted_att as p
-right join train as t
-on p.LastWorkingDate = t.LastWorkingDate
-order by Emp_ID;
 
 -- Lucky shrub database from coursera
 CREATE DATABASE luckyshrub_db; 
@@ -138,4 +129,4 @@ VALUES (1, "Cl1", "P1", 10, 500),
 (7, "Cl1", "P4", 22, 1200), 
 (8, "Cl1", "P1", 15, 150);
 
---     ####################3
+--     ####################
